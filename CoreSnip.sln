@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreSnip.HostedService", "CoreSnip.HostedService\CoreSnip.HostedService.csproj", "{B381036D-0C51-48F3-BEA3-2914A053F56C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreSnip.HostedService", "CoreSnip.HostedService\CoreSnip.HostedService.csproj", "{B381036D-0C51-48F3-BEA3-2914A053F56C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreSnip.Serilog", "CoreSnip.Serilog\CoreSnip.Serilog.csproj", "{0475D20A-1A95-4688-9D21-4F8AB8735833}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B381036D-0C51-48F3-BEA3-2914A053F56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B381036D-0C51-48F3-BEA3-2914A053F56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B381036D-0C51-48F3-BEA3-2914A053F56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0475D20A-1A95-4688-9D21-4F8AB8735833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0475D20A-1A95-4688-9D21-4F8AB8735833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0475D20A-1A95-4688-9D21-4F8AB8735833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0475D20A-1A95-4688-9D21-4F8AB8735833}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
