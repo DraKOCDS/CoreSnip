@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreSnip.HostedService", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreSnip.Serilog", "CoreSnip.Serilog\CoreSnip.Serilog.csproj", "{0475D20A-1A95-4688-9D21-4F8AB8735833}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreSnip.Tests", "CoreSnip.Tests\CoreSnip.Tests.csproj", "{027278B7-EA0B-4158-8A6F-3D3DA9E890F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0475D20A-1A95-4688-9D21-4F8AB8735833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0475D20A-1A95-4688-9D21-4F8AB8735833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0475D20A-1A95-4688-9D21-4F8AB8735833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027278B7-EA0B-4158-8A6F-3D3DA9E890F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027278B7-EA0B-4158-8A6F-3D3DA9E890F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027278B7-EA0B-4158-8A6F-3D3DA9E890F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027278B7-EA0B-4158-8A6F-3D3DA9E890F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
