@@ -1,11 +1,10 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 using Moq;
 using System;
 
-namespace CoreSnip.Tests
+namespace CoreSnip.Tests.MockExtensions
 {
-    public static class MockExtensions
+    public static class MockLoggerExtensions
     {
         /// <summary>
         /// Verify that the <paramref name="logger"/> calls the Log method with the <paramref name="expectedMessage"/> and <paramref name="expectedLogLevel"/> the specified number of <paramref name="times"/>
@@ -31,27 +30,6 @@ namespace CoreSnip.Tests
                     It.Is<Func<It.IsAnyType, Exception, string>>((v, t) => true)), (Times)times);
 
             return logger;
-        }
-
-        /// <summary>
-        /// Set up the internal <see cref="IServiceScope"/> and <see cref="IServiceScopeFactory"/> with mocked objects 
-        /// so that subsequent set up of the GetService method on the <paramref name="serviceProvider"/> will return the desired mock. 
-        /// <para><c>
-        /// serviceProvider.Setup(x => x.GetService(typeof(IMyInterface))).Returns(myInterface.Object);
-        /// </c></para>
-        /// </summary>
-        /// <param name="serviceProvider">The service provider to set up</param>
-        /// <returns>The configured service provider mock</returns>
-        public static Mock<IServiceProvider> SetupBaseInfrastructure(this Mock<IServiceProvider> serviceProvider)
-        {
-            var serviceScope = new Mock<IServiceScope>();
-            var serviceScopeFactory = new Mock<IServiceScopeFactory>();
-
-            serviceScope.Setup(x => x.ServiceProvider).Returns(serviceProvider.Object);
-            serviceScopeFactory.Setup(x => x.CreateScope()).Returns(serviceScope.Object);
-            serviceProvider.Setup(x => x.GetService(typeof(IServiceScopeFactory))).Returns(serviceScopeFactory.Object);
-
-            return serviceProvider;
         }
     }
 }
